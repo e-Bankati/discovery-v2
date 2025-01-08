@@ -1,18 +1,7 @@
 spring:
   config:
-    import: optional:configserver:https://bankati-config-server.onrender.com
+    import: optional:configserver:https://bankatii-config-server.onrender.com
   application:
     name: discovery-service
 
-server:
-  port: 8761
 
-eureka:
-  instance:
-    hostname: bankati-discovery.onrender.com
-    prefer-ip-address: false
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: https://${eureka.instance.hostname}/eureka/
